@@ -1,65 +1,63 @@
+import React from 'react';
+import BackHead from '../components/back-head/back-head';
+import NavBar from '../components/nav-bar/nav-bar';
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Credit from '../components/views/main/credit';
+// import Title from '../components/titles.js/title';
+import Features from '../components/views/features/features';
+import EasyApi from '../components/views/easy-api/easy-api';
+import EasyPricing from '../components/views/pricing/pricing';
+import Footer from '../components/footer/footer';
+import Logotypes from '../components/views/logotypes/logotypes';
+import Cards from '../components/views/cards/cards';
+import Faq from '../components/views/FAQ/faq';
+import StartGrowing from '../components/views/start-growing/start-growing';
+import Map from '../components/views/map/map';
 
-export default function Home() {
+
+//TO DO:
+//FAVICON, all Buttons footer, 
+//
+//
+//
+//
+//
+//
+//
+//
+const Index = (props) => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>  
+        <Head>
+          <title>LATERAL | HOME</title>
+        </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        {/* 👷  NAVIGATION ---> */}
+          <NavBar/>
+        {/* 👷  BACK IMAGE  ---> */}
+          <BackHead id="origin"/>
+        {/* 👷  CREDIT SECTION  ---> */}
+          <Credit/>
+        {/* 👷  FEATURES SECTION  ---> */}
+          <Features/>
+        {/* 👷  API SECTION  ---> */}
+          <EasyApi/>
+        {/* 👷  PRICING SECTION  ---> */}
+          <EasyPricing/>
+        {/* 👷  MAP SECTION  ---> */}
+          <Map/>
+        {/* 👷  FAQ SECTION  ---> */}
+          <Faq/>
+        {/* 👷  CARD SECTION  ---> */}
+          <Cards/>
+        {/* 👷  LOGOTYPE SECTION  ---> */}
+          <Logotypes/>
+        {/* 👷  START GROWING SECTION  ---> */}
+        <StartGrowing/>
+        {/* 👷  PRICING SECTION  ---> */}
+        <Footer/>
+    </>
+  );
+};
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
-}
+export default Index;

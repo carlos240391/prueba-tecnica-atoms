@@ -1,0 +1,114 @@
+
+svg{
+    height:100%;
+    width:100%;
+    position:absolute;
+    z-index:-10;
+    @media (max-width:1000px){
+        width:1000px!important;
+    }
+    
+}
+
+.wave-container{
+    width:100%;
+    position:relative;
+    height:450px;
+    overflow:hidden;
+    display:flex;
+    justify-content: center;
+    :before{
+        content:'';
+        display:block;
+        width:100%;
+        height:100%;
+        position:absolute;
+        background:var(--graymedium);
+        left:0px;
+        top:0px;
+        z-index:-20;
+    }
+    @media (max-width:500px){
+        height:400px;
+    }
+    @media (max-width:450px){
+        height:450px;
+    }
+    @media (max-width:400px){
+        height:550px;
+    }
+    &__position{
+        width:100%;
+        max-width:1200px;
+     
+    }
+    &__content{
+        width:100%;
+        height:100%;
+        display:flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position:relative;
+        margin-top:70px;
+        @media (max-width:800px){
+            flex-flow:column;
+        }
+        &__text, &__btn{
+            width:50%;
+            padding:20px;
+        }
+        &__text{
+            display:flex;
+            flex-flow:column;
+            @media (max-width:900px){
+                width:60%;
+            }
+            @media (max-width:800px){
+                width:100%;
+            }
+            h1{
+                font-size:3rem;
+                font-weight:200;
+                margin-bottom:20px;
+                mark{
+                    background:none;
+                    font-weight:700;
+                    color:var(--purple);
+                }
+            }
+            
+        }
+        &__btn{
+            display:flex;
+            align-items: center;
+            padding-left:100px;
+            a{
+                width:300px;
+                height:60px;
+                border-radius:25px;
+                border:none;
+                background:var(--blue);
+                color:var(--white);
+                cursor:pointer;
+                font-size:2rem;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    background:#81e2f5;
+                }
+            }
+            @media (max-width:900px){
+                width:40%;
+                justify-content: center;
+                padding:20px;
+            }
+            @media (max-width:800px){
+                width:100%;
+                align-items:flex-start;
+                justify-content:flex-start;
+                padding-left:20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+.apicode-container{
+    padding:20px 20px 80px 20px;
+    margin-bottom:40px;
+    font-size:1.5rem;
+    span{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color:navy;
+    }
+    span:nth-child(1){
+        color:var(--purple);
+    }
+    
+    &__editor{
+        width:100%;
+        height:400px;
+        background:var(--white);
+        padding:50px 70px;
+        @media (max-width:800px){
+            overflow-x: scroll;
+        }
+    }
+
+
+    &__buttons{
+        background:var(--gray);
+        width:100%;
+        height:80px;
+        display:flex;
+        justify-content: flex-end;
+        align-items:center;
+        padding:20px;
+        @media (max-width:800px){
+            justify-content: center;
+        }
+        @media (max-width:400px){
+            padding:10px;
+            font-size:0.5rem;
+        }
+        
+        #run, #copy{
+            width:200px;
+            padding:15px 20px;
+            border-radius:50px;
+            border:none;
+            margin:0px 10px;
+            color:white;
+            background:var(--blue);
+            font-weight:700;
+            cursor:pointer;
+            &:hover{
+                filter:contrast(125%);
+            }
+            @media (max-width:800px){
+                width:150px;
+            }
+        }
+        #run{
+            background:var(--purple);
+            &:hover{
+                filter:contrast(155%);
+            }
+        }
+    }
+
+
+}
+
+
+
+.content-toggle{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding:20px 20px 20px 0px;
+    position:relative;
+    @media (max-width:800px){
+        justify-content: center;
+    }
+    &:before{
+        content:'';
+        display:block;
+        width:calc(100% - 40px);
+        height:1px;
+        background:var(--gray);
+        position:absolute;
+        left:50%;
+        transform:translateX(-50%);
+        bottom:22px;
+    }
+    &__radios{
+        input[type="radio"]{
+            display:none;
+        }
+        input[type="radio"]:checked + label span:before{
+            width:100%;
+        }
+        input[type="radio"] + label span{
+            color:gray;
+        }
+        input[type="radio"]:checked + label span{
+            color:var(--black);
+        }
+        label{
+            display:block;
+            width:230px;
+            height:70px;
+            @media (max-width:800px){
+                width:100px;
+            }
+        }
+        span{
+            width:100%;
+            height:100%;
+            display:flex;
+            justify-content:center;
+            text-transform:capitalize;
+            padding:10px;
+            cursor:pointer;
+            position:relative;
+            &:before{
+                content:'';
+                display:block;
+                width:0;
+                height:4px; 
+                position:absolute;
+                bottom:0px;
+                background:var(--purple);
+                transition:all 0.5s;
+            }
+        }
+
+    }
+}
