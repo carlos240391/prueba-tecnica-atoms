@@ -1,3 +1,16 @@
+Para poderlo correr debe estar instalado node js
+> <p>1.- Clonar o descargar el proyecto y correr en la consoloa el comando <strnong>npm install</strong></p>
+> <p>2.- Ejecutar el comando npm run dev para correr en localhost y abrir el puerto 3000</p>
+> <p>3.- Para compilar y exportar ejectar el comando npm run build</p>
+
+<h1>El proyecto esta desplegado en: https://prueba-atoms.netlify.app/</h1>
+
+gracias!
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
