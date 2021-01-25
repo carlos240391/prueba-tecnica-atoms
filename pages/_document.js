@@ -26,7 +26,10 @@ class MyDocument extends Document {
           {/*
           <link href={`https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;700;900&display=swap`}
                 rel="stylesheet"/> */}
-                
+          <meta property="og:title" content="Lateral" />
+          <meta property="og:type" content="Prueba tecnica" />
+          <meta property="og:url" content="https://prueba-atoms.netlify.app/" />
+          <meta property="og:image" content="https://www.eventige.com/hubfs/full-service-marketing-agency-2.png" />
         </Head>
         <body>
           <Main/>

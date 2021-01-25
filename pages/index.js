@@ -21,9 +21,6 @@ const Index = (props) => {
     <>  
         <Head>
             <title>LATERAL | HOME</title>
-            <meta property="og:title" content="Prueba tecnica" />
-            <meta property="og:type" content="prueba de reclutamiento" />
-            <meta property="og:image" content="https://www.eventige.com/hubfs/full-service-marketing-agency-2.png"/>
         </Head>
 
         {/* 👷  NAVIGATION ---> */}
