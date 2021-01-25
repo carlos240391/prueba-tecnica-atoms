@@ -10,7 +10,7 @@ const Spiner = () => {
             alignItems:'center'
         }}>
              <FadeLoader
-                color="var(--blue)"  size={250}/>
+                color="var(--purple)"  size={250}/>
         </div>
     );
 };

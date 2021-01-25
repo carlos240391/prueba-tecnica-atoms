@@ -15,21 +15,15 @@ import StartGrowing from '../components/views/start-growing/start-growing';
 import Map from '../components/views/map/map';
 
 
-//TO DO:
-//FAVICON, all Buttons footer, 
-//
-//
-//
-//
-//
-//
-//
-//
+
 const Index = (props) => {
   return (
     <>  
         <Head>
-          <title>LATERAL | HOME</title>
+            <title>LATERAL | HOME</title>
+            <meta property="og:title" content="Prueba tecnica" />
+            <meta property="og:type" content="prueba de reclutamiento" />
+            <meta property="og:image" content="https://www.eventige.com/hubfs/full-service-marketing-agency-2.png"/>
         </Head>
 
         {/* 👷  NAVIGATION ---> */}
