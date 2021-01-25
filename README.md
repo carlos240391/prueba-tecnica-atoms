@@ -1,5 +1,5 @@
 Para poderlo correr debe estar instalado node js
-> <p>Clonar o descargar el proyecto y correr en la consoloa el comando npm install</p>
+> <p>Clonar o descargar el proyecto y correr en la consoloa el comando <mark>npm install </mark></p>
 > <p>Ejecutar el comando npm run dev para correr en localhost y abrir el puerto 3000</p>
 > <p>Para compilar y exportar ejectar el comando nom run build</p>
 
