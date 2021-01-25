@@ -1,7 +1,7 @@
 Para poderlo correr debe estar instalado node js
-> <h3>Clonar o descargar el proyecto y correr en la consoloa el omando npm install</h3>
-> <h3>Ejecutar el comando npm run dev para correr en localhost y abrir el puerto 3000</h3>
-> <h3>Para compilar y exportar ejectar el comando nom run build</h3>
+> <p>Clonar o descargar el proyecto y correr en la consoloa el comando npm install</p>
+> <p>Ejecutar el comando npm run dev para correr en localhost y abrir el puerto 3000</p>
+> <p>Para compilar y exportar ejectar el comando nom run build</p>
 
 <h1>El proyecto esta desplegado en: https://prueba-atoms.netlify.app/</h1>
 
