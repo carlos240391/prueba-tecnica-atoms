@@ -1,16 +1,29 @@
+
+///ESTE COMPONENTE ES UNA RUTA 
+///DE PRUEBA PARA LOS ENLACES,
+///UNICAMENTE CON LA FINALIDAD
+///DE NO DEJAR SIN ACCIONES 
+///LOS BOTONES CON REDIRECCION
+//
+//
+//
+//
+//
+
+
+
 import React from 'react';
 import {motion} from 'framer-motion'
 import Link from 'next/link'
 import Head from 'next/head'
-import Spiner from '../components/spiner/spiner';
 
 const Started = () => {
     return (
         <motion.div 
-        exit={{opacity:0}}
-        initial={{opacity:0,y:20}}
-        animate={{opacity:1, y:0}}
-        transition={{duration:1.5}}
+            exit={{opacity:0}}
+            initial={{opacity:0,y:20}}
+            animate={{opacity:1, y:0}}
+            transition={{duration:1.5}}
         >
         <Head>
             <title>LATERAL | STARTED</title>

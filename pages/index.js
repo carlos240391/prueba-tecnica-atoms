@@ -1,13 +1,21 @@
+//
+//
+// TODOS LOS COMPONENTES SE IMPORTAN DESDE LA RUTA
+// '/components/views'
+// EXEPTO Footer , NavBar y back head
+//
+//
+
+
 import React from 'react';
+import Head from 'next/head'
 import BackHead from '../components/back-head/back-head';
 import NavBar from '../components/nav-bar/nav-bar';
-import Head from 'next/head'
+import Footer from '../components/footer/footer';
 import Credit from '../components/views/main/credit';
-// import Title from '../components/titles.js/title';
 import Features from '../components/views/features/features';
 import EasyApi from '../components/views/easy-api/easy-api';
 import EasyPricing from '../components/views/pricing/pricing';
-import Footer from '../components/footer/footer';
 import Logotypes from '../components/views/logotypes/logotypes';
 import Cards from '../components/views/cards/cards';
 import Faq from '../components/views/FAQ/faq';
@@ -24,13 +32,14 @@ const Index = (props) => {
         </Head>
 
         {/* 👷  NAVIGATION ---> */}
-          <NavBar/>
+          <NavBar/> 
         {/* 👷  BACK IMAGE  ---> */}
           <BackHead id="origin"/>
         {/* 👷  CREDIT SECTION  ---> */}
           <Credit/>
         {/* 👷  FEATURES SECTION  ---> */}
           <Features/>
+
         {/* 👷  API SECTION  ---> */}
           <EasyApi/>
         {/* 👷  PRICING SECTION  ---> */}
