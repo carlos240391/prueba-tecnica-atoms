@@ -1,12 +1,12 @@
 //
 //
 // TODOS LOS COMPONENTES SE IMPORTAN DESDE LA RUTA
-// '/components/views'
-// EXEPTO Footer , NavBar y back head
+// -------> '/components/views'
+// EXEPTO Footer , NavBar y back head.
 //
 //
-
-
+//
+//
 import React from 'react';
 import Head from 'next/head'
 import BackHead from '../components/back-head/back-head';
@@ -28,6 +28,7 @@ const Index = (props) => {
   return (
     <>  
         <Head>
+            {/*------> Meta datos */}
             <title>LATERAL | HOME</title>
         </Head>
 
@@ -39,7 +40,6 @@ const Index = (props) => {
           <Credit/>
         {/* 👷  FEATURES SECTION  ---> */}
           <Features/>
-
         {/* 👷  API SECTION  ---> */}
           <EasyApi/>
         {/* 👷  PRICING SECTION  ---> */}
@@ -50,7 +50,7 @@ const Index = (props) => {
           <Faq/>
         {/* 👷  CARD SECTION  ---> */}
           <Cards/>
-        {/* 👷  LOGOTYPE SECTION  ---> */}
+        {/* 👷  LOGOTYPES SECTION  ---> */}
           <Logotypes/>
         {/* 👷  START GROWING SECTION  ---> */}
         <StartGrowing/>

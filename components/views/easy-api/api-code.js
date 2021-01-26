@@ -13,12 +13,10 @@ const ApiCode = (props) => {
    const getAlert = () =>{
     swal({
         content:
-        (
-        <div>
-            <h1>Thank you!</h1>
-            <p>Run example</p>
-        </div>
-        ),
+            (<div>
+                <h1>Thank you!</h1>
+                <p>Run example</p>
+            </div>),
         buttons:false
       });
    }
@@ -39,9 +37,14 @@ const ApiCode = (props) => {
                             onChange={()=> setSwitchLg(item)}
                             />
                     <label  htmlFor={`lg${i}`}>
+
+                        {/*<MeediaQuery/> ES UN COMPONENTE QUE EVALUA UN BREAKPOINT 
+                        Y CUANDO SE CUMPLE MUESTRA U OCULTA EL COMPONENTE DENTRO DE EL */}
+
                         <MediaQuery query="(min-width:800px)">
                             <span>{titles[i]}</span>
                         </MediaQuery>
+
                         <MediaQuery query="(max-width:800px)">
                             <span>{item.toUpperCase()}</span>
                         </MediaQuery>

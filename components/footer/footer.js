@@ -1,6 +1,5 @@
 import React from 'react';
 import { facebookLink, linkedinLink, twitterLink } from '../../utils/items';
-//import Container from '../layouts/containers';
 import { FooterContainer } from './footer-styles';
 import Link from 'next/link'
 import {Link as LinkId} from 'react-scroll'
@@ -40,7 +39,7 @@ const Footer = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             >
-                            <img src="/assets/img/social/black/linkedin.png" alt="flinkedin logo"/>
+                            <img src="/assets/img/social/black/linkedin.png" alt="linkedin logo"/>
                         </a>
                     </div>
                </section>
@@ -50,7 +49,6 @@ const Footer = () => {
 
                <section className="footer-section__grid__right__column">
                     <h2>Company</h2>
-
                     <Link href="/started">About</Link>
                     <Link href="/started">Carrers</Link>
                     <Link href="/started">Awards</Link>

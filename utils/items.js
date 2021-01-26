@@ -1,4 +1,12 @@
 
+///
+///
+//
+// EN ESTA SECCION PUSE TODOS LOS RECURSO CONSUMIBLES
+// PARA EL FRONT QUE BIEN PUEDEN VENIR DE AQUI 
+// O DE UNA API
+
+
 
 export const facebookLink = 'http://www.facebook.com'
 export const twitterLink = 'http://www.twitter.com'

@@ -12,6 +12,15 @@ export const FooterContainer = styled.footer`
         background-repeat:no-repeat;
         overflow:hidden;
         height:350px;
+        :before{
+            content:'';
+            position: absolute;
+            top:0px;
+            width:100%;
+            height:700px;
+            background:linear-gradient(var(--softpurple), transparent);
+            z-index:1;
+        }
         @media (max-width:850px){
             height:500px;
             background-position-y:-10px;
@@ -99,8 +108,8 @@ export const FooterContainer = styled.footer`
                 }
                 @media (max-width:300px){
                     grid-template-columns:repeat(auto-fill, 150px);
-
                 }
+
                 &__column{
                     width:200px;
                     display:flex;
@@ -118,15 +127,5 @@ export const FooterContainer = styled.footer`
                 }
             }
             
-        }
-
-        :before{
-            content:'';
-            position: absolute;
-            top:0px;
-            width:100%;
-            height:700px;
-            background:linear-gradient(var(--softpurple), transparent);
-            z-index:1;
         }
 `;

@@ -1,3 +1,11 @@
+//
+//
+// El consumible
+// cardsItems
+// viene de la carpeta utils
+//
+//
+
 import React from 'react';
 import { cardsItems } from '../../../utils/items';
 import Container from '../../layouts/containers';
