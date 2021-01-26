@@ -4,6 +4,7 @@ import CircleImg from './circle-img';
 import { BackMap } from './map-styles';
 
 const Map = (props) => {
+    
     const [point, setPoint] = React.useState(0)
     const breakPoint = React.useCallback(()=>{
             if( typeof window !== 'undefined'){

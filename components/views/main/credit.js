@@ -4,7 +4,6 @@ import {motion} from 'framer-motion'
 import swal from '@sweetalert/with-react'
 import DemoComponent from './demo-component';
 import Simulator from './simulator';
-//import ButtonLink from '../../buttons/button-link';
 import Link from 'next/link'
 
 const Credit = (props) => {
@@ -60,6 +59,10 @@ const Credit = (props) => {
                         animate={{opacity:1, y:0}}
                         transition={{duration:1.5, delay:1.5}}
                 >
+
+                {/* ----->ESTE ES EL COMPONENTE CON EL SIMULADOR
+                DE CREDITO */}
+
                 <Simulator/>
             </motion.div>
 

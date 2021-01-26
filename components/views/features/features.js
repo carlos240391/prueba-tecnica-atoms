@@ -1,3 +1,11 @@
+// //
+// //
+//
+// El consumible
+// -------> featuresItems 
+// se encuentra en la carpeta utils
+//
+
 import React from 'react';
 import Container from '../../layouts/containers';
 import Title from '../../titles.js/title';

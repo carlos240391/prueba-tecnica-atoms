@@ -1,3 +1,10 @@
+//
+//
+// El consumible 
+// itemsPrices
+// proviene de la carpeta utils
+
+
 import React from 'react';
 import {motion} from 'framer-motion'
 import Title from '../../titles.js/title';

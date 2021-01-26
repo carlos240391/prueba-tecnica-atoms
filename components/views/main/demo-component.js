@@ -1,3 +1,13 @@
+
+
+
+
+// ESTE COMPONENTE RENDERIZA 
+// EL CONTENIDO DEL MODAL
+// DE 'DEMO'
+
+
+
 import React from 'react';
 
 const DemoComponent = (prop) => {
