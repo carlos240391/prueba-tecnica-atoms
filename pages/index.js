@@ -12,7 +12,7 @@ import Head from 'next/head'
 import BackHead from '../components/back-head/back-head';
 import NavBar from '../components/nav-bar/nav-bar';
 import Footer from '../components/footer/footer';
-import Credit from '../components/views/main/credit';
+import Credit from '../components/views/credit/credit';
 import Features from '../components/views/features/features';
 import EasyApi from '../components/views/easy-api/easy-api';
 import EasyPricing from '../components/views/pricing/pricing';

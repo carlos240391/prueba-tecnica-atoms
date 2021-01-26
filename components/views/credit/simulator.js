@@ -15,6 +15,10 @@ const Simulator = (props) => {
 
 
     const generateNumber = (number) =>{
+
+        // Esta funcion usa una expresion regular
+        // para poner una coma a la cifra de los miles
+
         const num = number.toString().split('.')
         let spliter = num[0].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
         if(num[1]){
@@ -23,14 +27,7 @@ const Simulator = (props) => {
         return spliter
     }
 
-    // React.useEffect(()=>{
-    //     const number = 234560.60.toString().split('.')
-    //     let spliter = number[0].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-    //     if(number[1]){
-    //         spliter += "." + number[1].substr(0,3);
-    //     }
-    //     console.log(spliter)
-    // },[])
+    
     return (
         
         <SimulatorContainer>
@@ -40,6 +37,12 @@ const Simulator = (props) => {
             </section>
 
             {/*----> 🔲  INPUT RANGES-------------> */}
+            {/*----> 🔲  
+                        LOS ESTILOS ESTAN EN 
+                        LA CARPETA 'styles' en scss global
+                        PARA SOBRESCRIBIR LOS ESTILOS
+                        DE LA LIBRERIA QUE USE
+            -------------> */}
             <section className="simulator-field">
                 <label>Monto deseado</label>
                 <InputRange maxValue={20000}
@@ -129,7 +132,7 @@ const Simulator = (props) => {
                     Total pagado:
                     {/* <span>${(monto + (comision*(tasa/100))).toFixed(2)}</span> */}
                     {/* <span>${generateNumber((monto + ((comision*(tasa/100)+comision))).toFixed(2))}</span> */}
-                    {/*------> POSIBLES */}
+                    {/*------> POSIBLES TENGO DUDAS */}
                     {/* <span>${generateNumber((monto + comision) + ((tasa/100) * monto))}</span> */}
                     <span>${generateNumber(((monto + comision) + ((tasa/100)*(monto + comision))).toFixed(2))}</span>
                 </div>
